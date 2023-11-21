@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository hosts a programming language recommendation system, designed as an expert system to suggest programming languages based on user-selected characteristics via a questionnaire form.
+This repository hosts a programming language recommendation system, designed as an expert system to suggest programming languages based on user-selected characteristics via a questionnaire form. This system was developed as a mini project assigned for the Artificial Intelligence study unit.
 
 ### System Description
 
