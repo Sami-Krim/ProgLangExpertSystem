@@ -1,0 +1,1566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>819</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.455, x2:0, y2:0.426, stop:0 rgba(78, 67, 118, 255), stop:0.755682 rgba(43, 88, 118, 255));
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">
+
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(45, 45, 68);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+
+ }
+ QScrollBar {
+
+	border: none;
+    background: rgb(45, 45, 68);
+    color: white;
+	border-radius: 20px;
+	background-image: url(:/photos/1_wcEYa9AjnMZxXAau2iuhYw.png);
+
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(80, 80, 122);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background-color: #B37BAC;
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: #D583AB;
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color: #B37BAC;
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: #D583AB;
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color:#B37BAC;
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: #D583AB;
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>9</number>
+    </property>
+    <property name="rightMargin">
+     <number>9</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="logoFrame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="logo">
+         <property name="font">
+          <font>
+           <family>Montserrat Alternates Black</family>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 162, 32);
+background-color: transparent;</string>
+         </property>
+         <property name="text">
+          <string>NEXT STEP</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="slogan">
+         <property name="font">
+          <font>
+           <family>Montserrat Alternates Light</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(212, 244, 255);</string>
+         </property>
+         <property name="text">
+          <string>Your guide for your programming journey.</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="photo">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>156</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <property name="spacing">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="photo1">
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="Photos/resources.qrc">:/photos/Group 1.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="font">
+       <font>
+        <family>Montserrat Alternates Medium</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="landingPage">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>22</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>17</number>
+        </property>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="ps">
+          <property name="font">
+           <font>
+            <family>Miriam Mono CLM</family>
+            <pointsize>11</pointsize>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+            <underline>false</underline>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:rgb(170, 255, 255)</string>
+          </property>
+          <property name="text">
+           <string>&quot;PS: When you choose, you must pick ONLY one choice&quot;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="form">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QScrollArea" name="scrollArea">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <kerning>true</kerning>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+background-color: rgb(34, 45, 68);
+
+color: white;
+    </string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOn</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>-756</y>
+                <width>816</width>
+                <height>1031</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <property name="leftMargin">
+                <number>37</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>37</number>
+               </property>
+               <item>
+                <widget class="QFrame" name="q1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <widget class="QLabel" name="ques">
+                    <property name="minimumSize">
+                     <size>
+                      <width>500</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates Medium</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Would you prefer a programming language that is easy to use? </string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignRight">
+                   <widget class="QRadioButton" name="yes">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QRadioButton" name="no">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>No</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="q2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_11">
+                  <item>
+                   <widget class="QLabel" name="ques2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>500</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates Medium</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Are you interested in a language with a large community? </string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignRight">
+                   <widget class="QRadioButton" name="yes2">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QRadioButton" name="no2">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>No</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="q3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_12">
+                  <item>
+                   <widget class="QLabel" name="ques3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>500</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates Medium</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Do you prioritize high performance in a programming language? </string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignRight">
+                   <widget class="QRadioButton" name="yes3">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QRadioButton" name="no3">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>No</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="q4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_7">
+                  <item>
+                   <widget class="QLabel" name="ques4">
+                    <property name="minimumSize">
+                     <size>
+                      <width>500</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates Medium</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Do you prefer open-source languages?</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignRight">
+                   <widget class="QRadioButton" name="yes4">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QRadioButton" name="no4">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>No</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="q5">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_6">
+                  <item>
+                   <widget class="QLabel" name="ques5">
+                    <property name="minimumSize">
+                     <size>
+                      <width>500</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates Medium</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Do you value strong security features in a PL? </string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignRight">
+                   <widget class="QRadioButton" name="yes5">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QRadioButton" name="no5">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>No</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="q1_2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                  <item>
+                   <widget class="QLabel" name="ques6">
+                    <property name="minimumSize">
+                     <size>
+                      <width>500</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates Medium</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Do you want a language that is easy to maintain? </string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignRight">
+                   <widget class="QRadioButton" name="yes6">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QRadioButton" name="no6">
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>No</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="q7">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <property name="rightMargin">
+                   <number>21</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="ques7">
+                    <property name="minimumSize">
+                     <size>
+                      <width>481</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates Medium</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>What type of programming language are you looking for?</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox7">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>500</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                      <pointsize>10</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Compiled</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Interpreted</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="q8">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <property name="rightMargin">
+                   <number>21</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="ques8">
+                    <property name="minimumSize">
+                     <size>
+                      <width>481</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates Medium</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>What is your level of programming expertise?</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox8">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>500</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                      <pointsize>10</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Beginner</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Intermediate </string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Expert</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="q9">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_9">
+                  <property name="rightMargin">
+                   <number>21</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="ques9">
+                    <property name="minimumSize">
+                     <size>
+                      <width>481</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates Medium</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>In which specific domain do you plan to use this  PL? </string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="comboBox9">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>500</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates</family>
+                      <pointsize>10</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>General purpose</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Front-end web development </string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Back-end web development </string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Data science</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Desktop development</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Mobile development</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Game development</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="btnFrame">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>68</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_7">
+                  <property name="leftMargin">
+                   <number>200</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>200</number>
+                  </property>
+                  <item>
+                   <widget class="QPushButton" name="pushButton">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>201</width>
+                      <height>37</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Montserrat Alternates SemiBold</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    /* Default state */
+    background-color:qlineargradient(spread:pad, x1:0.5345, y1:0, x2:0.557, y2:1, stop:0 rgba(255, 162, 32, 255), stop:0.755682 rgba(213, 132, 26, 255)); /* Set the desired color */
+    border-radius: 4px; /* Set the desired border radius */
+}
+
+QPushButton:hover {
+    /* Hover state */
+    background-color: rgb(255, 158, 32); /* Set the desired color */
+}
+
+QPushButton:pressed {
+    /* Clicked state */
+    background-color: rgb(167, 103, 20); /* Set the desired color */
+}
+
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Discover languages</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="resultPage">
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <property name="spacing">
+         <number>7</number>
+        </property>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QFrame" name="keyWordsFrame">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QLabel" name="keyLabel">
+             <property name="font">
+              <font>
+               <family>Montserrat Alternates ExtraBold</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Key words : </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="keyWords">
+             <property name="font">
+              <font>
+               <family>MS Shell Dlg 2</family>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <property name="leftMargin">
+               <number>18</number>
+              </property>
+              <item alignment="Qt::AlignLeft">
+               <widget class="QLabel" name="a1">
+                <property name="font">
+                 <font>
+                  <family>Montserrat Alternates SemiBold</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>esd</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignLeft">
+               <widget class="QLabel" name="a2">
+                <property name="font">
+                 <font>
+                  <family>Montserrat Alternates SemiBold</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Key words :</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignLeft">
+               <widget class="QLabel" name="a3">
+                <property name="font">
+                 <font>
+                  <family>Montserrat Alternates SemiBold</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Key words :</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignLeft">
+               <widget class="QLabel" name="a4">
+                <property name="font">
+                 <font>
+                  <family>Montserrat Alternates SemiBold</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Key words :</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="a5">
+                <property name="font">
+                 <font>
+                  <family>Montserrat Alternates SemiBold</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Key words :</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="a6">
+                <property name="font">
+                 <font>
+                  <family>Montserrat Alternates SemiBold</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Key words :</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="a7">
+                <property name="font">
+                 <font>
+                  <family>Montserrat Alternates SemiBold</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Key words :</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="a8">
+                <property name="font">
+                 <font>
+                  <family>Montserrat Alternates SemiBold</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Key words :</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QLabel" name="a9">
+                <property name="font">
+                 <font>
+                  <family>Montserrat Alternates SemiBold</family>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>TextLabel</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="resultLang">
+          <property name="font">
+           <font>
+            <family>Montserrat Alternates Medium</family>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="lang">
+             <property name="font">
+              <font>
+               <family>Montserrat Alternates Black</family>
+               <pointsize>21</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>IBeamCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 162, 32);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="text">
+              <string>Python Language</string>
+             </property>
+             <property name="margin">
+              <number>7</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignTop">
+         <widget class="QFrame" name="definitionAndOtherFrame">
+          <property name="font">
+           <font>
+            <family>Montserrat Alternates Medium</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+            <widget class="QPlainTextEdit" name="definitionField">
+             <property name="minimumSize">
+              <size>
+               <width>700</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Montserrat Alternates Medium</family>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor" stdset="0">
+              <cursorShape>IBeamCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+    /* Set the desired text alignment */
+    qproperty-alignment: AlignCenter;
+
+
+</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="lineWidth">
+              <number>0</number>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarAsNeeded</enum>
+             </property>
+             <property name="lineWrapMode">
+              <enum>QPlainTextEdit::WidgetWidth</enum>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="plainText">
+              <string>adlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjladlfasdfhasdjfhjl</string>
+             </property>
+             <property name="centerOnScroll">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QFrame" name="otherLangFrame">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Montserrat Alternates Medium</family>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(170, 255, 255);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QLabel" name="titre">
+                <property name="font">
+                 <font>
+                  <family>Montserrat Alternates ExtraBold</family>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>IBeamCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string>Other recommeded Languages</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignTop">
+               <widget class="QLabel" name="otherLangs">
+                <property name="font">
+                 <font>
+                  <family>Montserrat Alternates ExtraBold</family>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>IBeamCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string>Html, qop, qp, zb</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QPushButton" name="goBackBtn">
+          <property name="minimumSize">
+           <size>
+            <width>89</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Montserrat Alternates ExtraBold</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    /* Default state */
+    background-color:qlineargradient(spread:pad, x1:0.5345, y1:0, x2:0.557, y2:1, stop:0 rgba(255, 162, 32, 255), stop:0.755682 rgba(213, 132, 26, 255)); /* Set the desired color */
+    border-radius: 4px; /* Set the desired border radius */
+color:white
+}
+
+QPushButton:hover {
+    /* Hover state */
+    background-color: rgb(255, 158, 32); /* Set the desired color */
+}
+
+QPushButton:pressed {
+    /* Clicked state */
+    background-color: rgb(167, 103, 20); /* Set the desired color */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Go back</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Photos/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
